@@ -1,0 +1,47 @@
+{
+  "name": "indiefolio-classificados-api",
+  "version": "1.0.0",
+  "description": "API pública opensource para classificados de bandas independentes brasileiras",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "validate": "node scripts/validate-incremental.js",
+    "validate-all": "node scripts/validate-incremental.js --complete",
+    "validate-classificados": "node scripts/validate-classificados.js",
+    "check-file-names": "node scripts/validate-classificados.js --check-names",
+    "update-timestamps": "node scripts/update-timestamps.js",
+    "generate-changelog": "node scripts/generate-changelog.js",
+    "prepare": "husky install",
+    "generate-tag": "node scripts/generate-tag.js",
+    "generate-statistics": "node scripts/generate-statistics.js && git add estatisticas.json && git commit -m 'feat: atualiza estatísticas'",
+    "generate-ids": "node scripts/pre-commit-classificados.js",
+    "pre-commit": "npm run generate-ids && npm run validate && npm run update-timestamps && npm run generate-changelog && git add classificados.json CHANGELOG.md history/"
+  },
+  "keywords": [
+    "classificados",
+    "bandas",
+    "independentes",
+    "música",
+    "brasil",
+    "opensource",
+    "api"
+  ],
+  "author": "Rafael Mahl",
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "husky": "^8.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mahlignus/indiefolio-classificados-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mahlignus/indiefolio-classificados-api/issues"
+  },
+  "homepage": "https://github.com/mahlignus/indiefolio-classificados-api#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

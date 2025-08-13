@@ -1,0 +1,46 @@
+[
+  {
+    "id": "exemplo-001",
+    "titulo": "Procuro guitarrista para banda de rock alternativo",
+    "descricao": "Nossa banda está procurando um guitarrista experiente para completar a formação. Tocamos rock alternativo com influências do grunge dos anos 90. Temos repertório próprio e estamos gravando nosso primeiro EP.",
+    "funcoes": ["guitarrista"],
+    "generos": ["rock", "rock alternativo", "grunge"],
+    "local": {
+      "pais": "Brasil",
+      "estado": "SP",
+      "cidade": "São Paulo"
+    },
+    "banda": {
+      "nome": "Exemplo Band",
+      "avatar": "EB"
+    },
+    "contatos": {
+      "email": "contato@exemploband.com",
+      "fone": "(11) 99999-9999"
+    },
+    "cadastroEm": "2024-08-12T10:30:00.000Z",
+    "emailCadastro": "exemplo@indiefolio.com.br",
+    "ultimaAtualizacao": "2024-08-12T10:30:00.000Z",
+    "status": "ativo"
+  },
+  {
+    "id": "exemplo-002",
+    "titulo": "Baterista procura banda de metal",
+    "descricao": "Baterista com 8 anos de experiência procura banda de metal para projetos sérios. Tenho equipamento próprio e disponibilidade para ensaios e shows.",
+    "funcoes": ["banda"],
+    "generos": ["metal", "heavy metal", "thrash metal"],
+    "local": {
+      "pais": "Brasil",
+      "estado": "RJ",
+      "cidade": "Rio de Janeiro"
+    },
+    "banda": null,
+    "contatos": {
+      "email": "baterista@exemplo.com"
+    },
+    "cadastroEm": "2024-08-10T14:20:00.000Z",
+    "emailCadastro": "usuario@indiefolio.com.br",
+    "ultimaAtualizacao": "2024-08-10T14:20:00.000Z",
+    "status": "ativo"
+  }
+]

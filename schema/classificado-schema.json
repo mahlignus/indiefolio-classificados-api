@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "titulo",
+      "funcoes",
+      "generos",
+      "local",
+      "contatos",
+      "cadastroEm",
+      "emailCadastro",
+      "ultimaAtualizacao"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 50,
+        "description": "ID único do classificado"
+      },
+      "titulo": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 200,
+        "description": "Título do classificado"
+      },
+      "descricao": {
+        "type": "string",
+        "maxLength": 2000,
+        "description": "Descrição detalhada do que procura"
+      },
+      "funcoes": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 10,
+        "items": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "uniqueItems": true,
+        "description": "Funções procuradas (ex: guitarrista, vocal, baixista)"
+      },
+      "generos": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 10,
+        "items": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 50
+        },
+        "uniqueItems": true,
+        "description": "Gêneros musicais relacionados"
+      },
+      "local": {
+        "type": "object",
+        "properties": {
+          "pais": {
+            "type": "string",
+            "enum": ["Brasil"],
+            "description": "Por enquanto apenas Brasil"
+          },
+          "estado": {
+            "type": "string",
+            "enum": [
+              "AC",
+              "AL",
+              "AP",
+              "AM",
+              "BA",
+              "CE",
+              "DF",
+              "ES",
+              "GO",
+              "MA",
+              "MT",
+              "MS",
+              "MG",
+              "PA",
+              "PB",
+              "PR",
+              "PE",
+              "PI",
+              "RJ",
+              "RN",
+              "RS",
+              "RO",
+              "RR",
+              "SC",
+              "SP",
+              "SE",
+              "TO"
+            ]
+          },
+          "cidade": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          }
+        }
+      },
+      "banda": {
+        "type": ["object", "null"],
+        "properties": {
+          "nome": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "avatar": {
+            "type": "string",
+            "description": "Avatar da banda (URL ou iniciais)"
+          }
+        },
+        "required": ["nome"]
+      },
+      "contatos": {
+        "type": "object",
+        "required": ["email"],
+        "properties": {
+          "email": {
+            "type": "string",
+            "format": "email",
+            "description": "Email para contato"
+          },
+          "fone": {
+            "type": "string",
+            "description": "Telefone para contato"
+          },
+          "instagram": {
+            "type": "string",
+            "pattern": "^@?[a-zA-Z0-9._-]{1,30}$",
+            "description": "Usuário do Instagram (opcional)"
+          }
+        }
+      },
+      "cadastroEm": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Timestamp ISO 8601 do cadastro"
+      },
+      "emailCadastro": {
+        "type": "string",
+        "format": "email",
+        "description": "Email do usuário que cadastrou"
+      },
+      "ultimaAtualizacao": {
+        "type": "string",
+        "format": "date-time",
+        "description": "Timestamp ISO 8601 da última atualização"
+      },
+      "status": {
+        "type": "string",
+        "enum": ["ativo", "pausado", "finalizado"],
+        "default": "ativo",
+        "description": "Status do classificado"
+      },
+      "slugIndiefolio": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 150,
+        "description": "Slug para bandas que já estão no Indiefolio"
+      },
+      "expiracaoEm": {
+        "type": ["string", "null"],
+        "format": "date-time",
+        "description": "Data de expiração do classificado"
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "totalClassificados": 2,
+  "classificadosAtivos": 2,
+  "classificadosPausados": 0,
+  "classificadosFinalizados": 0,
+  "classificadosExpirados": 0,
+  "funcoesMaisProcuradas": [
+    {
+      "funcao": "guitarrista",
+      "count": 1
+    },
+    {
+      "funcao": "banda",
+      "count": 1
+    }
+  ],
+  "generosMaisPopulares": [
+    {
+      "genero": "rock",
+      "count": 1
+    },
+    {
+      "genero": "rock alternativo",
+      "count": 1
+    },
+    {
+      "genero": "grunge",
+      "count": 1
+    },
+    {
+      "genero": "metal",
+      "count": 1
+    },
+    {
+      "genero": "heavy metal",
+      "count": 1
+    },
+    {
+      "genero": "thrash metal",
+      "count": 1
+    }
+  ],
+  "distribuicaoPorEstado": {
+    "SP": 1,
+    "RJ": 1
+  },
+  "distribuicaoPorStatus": {
+    "ativo": 2
+  },
+  "mediaClassificadosPorMes": 2,
+  "ultimosClassificados": [
+    {
+      "id": "exemplo-001",
+      "titulo": "Procuro guitarrista para banda de rock alternativo",
+      "funcoes": ["guitarrista"],
+      "cadastroEm": "2024-08-12T10:30:00.000Z",
+      "status": "ativo"
+    },
+    {
+      "id": "exemplo-002",
+      "titulo": "Baterista procura banda de metal",
+      "funcoes": ["banda"],
+      "cadastroEm": "2024-08-10T14:20:00.000Z",
+      "status": "ativo"
+    }
+  ],
+  "classificadosRecentes": 0,
+  "tempoMedioAtivo": 0,
+  "ultimaAtualizacao": "2025-08-12T23:09:42.247Z"
+}
