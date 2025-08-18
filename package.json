@@ -1,6 +1,6 @@
 {
   "name": "indiefolio-classificados-api",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "API pública opensource para classificados de bandas independentes brasileiras",
   "main": "server.js",
   "scripts": {
