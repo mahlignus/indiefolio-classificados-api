@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "node server.js",
+    "prettier": "npx prettier --write '**/*.{js,json,md}'",
     "validate": "node scripts/validate-incremental.js",
     "validate-all": "node scripts/validate-incremental.js --complete",
     "validate-classificados": "node scripts/validate-classificados.js",

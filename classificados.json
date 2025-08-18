@@ -1,77 +1,79 @@
-[
-  {
-    "titulo": "[EXEMPLO] Procura-se vocalista para banda pop rock",
-    "descricao": "Este é um anúncio de exemplo. Banda de Canoas busca vocalista para completar formação. Repertório variado, foco em pop rock nacional e internacional.",
-    "funcoes": ["vocal"],
-    "generos": ["pop rock", "rock"],
-    "local": {
-      "pais": "Brasil",
-      "estado": "RS",
-      "cidade": "Canoas"
+{
+  "data": [
+    {
+      "titulo": "[EXEMPLO] Procura-se vocalista para banda pop rock",
+      "descricao": "Este é um anúncio de exemplo. Banda de Canoas busca vocalista para completar formação. Repertório variado, foco em pop rock nacional e internacional.",
+      "funcoes": ["vocal"],
+      "generos": ["pop rock", "rock"],
+      "local": {
+        "pais": "Brasil",
+        "estado": "RS",
+        "cidade": "Canoas"
+      },
+      "banda": {
+        "nome": "Banda Exemplo Canoas",
+        "avatar": "BEC"
+      },
+      "contatos": {
+        "email": "exemplo.canoas@indiefolio.com.br",
+        "fone": "(51) 90000-0001",
+        "instagram": "@bandaexemplocanoas"
+      },
+      "slugIndiefolio": "exemplo-canoas",
+      "cadastroEm": "2025-08-13T10:00:00.000Z",
+      "emailCadastro": "exemplo.canoas@indiefolio.com.br",
+      "ultimaAtualizacao": "2025-08-13T10:00:00.000Z",
+      "status": "ativo",
+      "id": "mock1"
     },
-    "banda": {
-      "nome": "Banda Exemplo Canoas",
-      "avatar": "BEC"
+    {
+      "titulo": "[EXEMPLO] Baixista para banda de metal melódico",
+      "descricao": "Anúncio de exemplo. Procuramos baixista dedicado para banda de metal melódico em Esteio. Ensaios semanais e projetos autorais.",
+      "funcoes": ["baixista"],
+      "generos": ["metal melódico", "metal"],
+      "local": {
+        "pais": "Brasil",
+        "estado": "RS",
+        "cidade": "Esteio"
+      },
+      "banda": {
+        "nome": "Metal Exemplo Esteio",
+        "avatar": "MEE"
+      },
+      "contatos": {
+        "email": "exemplo.esteio@indiefolio.com.br",
+        "fone": "(51) 90000-0002",
+        "instagram": "@metalexemploesteio"
+      },
+      "cadastroEm": "2025-08-13T10:05:00.000Z",
+      "emailCadastro": "exemplo.esteio@indiefolio.com.br",
+      "ultimaAtualizacao": "2025-08-13T10:05:00.000Z",
+      "status": "ativo",
+      "id": "mock2"
     },
-    "contatos": {
-      "email": "exemplo.canoas@indiefolio.com.br",
-      "fone": "(51) 90000-0001",
-      "instagram": "@bandaexemplocanoas"
-    },
-    "slugIndiefolio": "exemplo-canoas",
-    "cadastroEm": "2025-08-13T10:00:00.000Z",
-    "emailCadastro": "exemplo.canoas@indiefolio.com.br",
-    "ultimaAtualizacao": "2025-08-13T10:00:00.000Z",
-    "status": "ativo",
-    "id": "mock1"
-  },
-  {
-    "titulo": "[EXEMPLO] Baixista para banda de metal melódico",
-    "descricao": "Anúncio de exemplo. Procuramos baixista dedicado para banda de metal melódico em Esteio. Ensaios semanais e projetos autorais.",
-    "funcoes": ["baixista"],
-    "generos": ["metal melódico", "metal"],
-    "local": {
-      "pais": "Brasil",
-      "estado": "RS",
-      "cidade": "Esteio"
-    },
-    "banda": {
-      "nome": "Metal Exemplo Esteio",
-      "avatar": "MEE"
-    },
-    "contatos": {
-      "email": "exemplo.esteio@indiefolio.com.br",
-      "fone": "(51) 90000-0002",
-      "instagram": "@metalexemploesteio"
-    },
-    "cadastroEm": "2025-08-13T10:05:00.000Z",
-    "emailCadastro": "exemplo.esteio@indiefolio.com.br",
-    "ultimaAtualizacao": "2025-08-13T10:05:00.000Z",
-    "status": "ativo",
-    "id": "mock2"
-  },
-  {
-    "titulo": "[EXEMPLO] Tecladista para banda indie em Porto Alegre",
-    "descricao": "Este é apenas um exemplo de anúncio. Banda indie de Porto Alegre procura tecladista criativo para compor e tocar em shows.",
-    "funcoes": ["tecladista"],
-    "generos": ["indie", "pop alternativo"],
-    "local": {
-      "pais": "Brasil",
-      "estado": "RS",
-      "cidade": "Porto Alegre"
-    },
-    "banda": {
-      "nome": "Indie Exemplo POA"
-    },
-    "contatos": {
-      "email": "exemplo.poa@indiefolio.com.br",
-      "fone": "(51) 90000-0003",
-      "instagram": "@indieexemplopoa"
-    },
-    "cadastroEm": "2025-08-13T10:10:00.000Z",
-    "emailCadastro": "exemplo.poa@indiefolio.com.br",
-    "ultimaAtualizacao": "2025-08-13T10:10:00.000Z",
-    "status": "ativo",
-    "id": "mock3"
-  }
-]
+    {
+      "titulo": "[EXEMPLO] Tecladista para banda indie em Porto Alegre",
+      "descricao": "Este é apenas um exemplo de anúncio. Banda indie de Porto Alegre procura tecladista criativo para compor e tocar em shows.",
+      "funcoes": ["tecladista"],
+      "generos": ["indie", "pop alternativo"],
+      "local": {
+        "pais": "Brasil",
+        "estado": "RS",
+        "cidade": "Porto Alegre"
+      },
+      "banda": {
+        "nome": "Indie Exemplo POA"
+      },
+      "contatos": {
+        "email": "exemplo.poa@indiefolio.com.br",
+        "fone": "(51) 90000-0003",
+        "instagram": "@indieexemplopoa"
+      },
+      "cadastroEm": "2025-08-13T10:10:00.000Z",
+      "emailCadastro": "exemplo.poa@indiefolio.com.br",
+      "ultimaAtualizacao": "2025-08-13T10:10:00.000Z",
+      "status": "ativo",
+      "id": "mock3"
+    }
+  ]
+}

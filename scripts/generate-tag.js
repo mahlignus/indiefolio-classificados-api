@@ -44,7 +44,6 @@ function detectChangeType(prev, curr) {
     if (!prevMap.has(titulo)) added = true;
   }
   for (const [titulo, classificado] of currMap) {
-    
     const prevClassificado = prevMap.get(titulo);
     if (prevClassificado) {
       const a = { ...classificado };
@@ -61,7 +60,9 @@ function detectChangeType(prev, curr) {
 
 function getPreviousFromGit() {
   try {
-    const prevContent = execSync("git show origin/main:classificados.json").toString();
+    const prevContent = execSync(
+      "git show origin/main:classificados.json"
+    ).toString();
     return JSON.parse(prevContent);
   } catch (e) {
     return null;
